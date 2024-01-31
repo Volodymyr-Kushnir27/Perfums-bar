@@ -1,0 +1,265 @@
+/* Додані медіа-запити для телефонного режиму */
+@media only screen and (max-width: 768px) {
+    .header {
+        grid-template-rows: auto; /* Автоматична висота для адаптації */
+    }
+
+    .news,
+    .navigation {
+        flex-direction: column; /* Змінено напрямок на колонку */
+        align-items: center; /* Вирівнюємо по центру */
+    }
+
+    .logo {
+        margin-right: 0; /* Зменшено відступ праворуч */
+    }
+
+    .head-button {
+        margin-right: 0; /* Зменшено відступ праворуч */
+    }
+
+    .small-button {
+        justify-content: center; /* Вирівнюємо по центру */
+    }
+
+    .nav-image-inst,
+    .nav-image-tik,
+    .nav-image-face {
+        margin-right: 5px;
+    }
+
+    .small-search-button,
+    .small-user-button,
+    .small-basket-button,
+    .nav-image-inst,
+    .nav-image-tik,
+    .nav-image-face {
+        width: 20px; /* Зменшено розмір кнопок */
+        height: 20px; /* Зменшено розмір кнопок */
+    }
+
+    .small-button {
+        margin-right: 5px; /* Зменшено відступ між кнопками */
+    }
+}
+
+/* Додайте інші стилі за необхідності */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: grid;
+    grid-template-rows: 25% 75%;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 20% 80%;
+    align-items: stretch;
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    overflow: auto; 
+}
+
+
+.news {
+    display: grid;
+    grid-template-columns: 85% 15%;
+    align-items: center;
+    margin: 0; /* Змінено на 0, щоб видалити відступи */
+    border-bottom: 1px solid #fff; /* Тут ви можете налаштувати товщину та колір лінії */
+        padding-bottom: 10px; /* Додатковий відступ знизу, якщо потрібно */
+}
+
+.news-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* Змінено на 0, щоб видалити відступи */
+}
+
+h {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.buttons-section {
+    display: flex;
+    flex-direction: row; /* Змінено на горизонтальне розташування */
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav-image-inst,
+.nav-image-tik,
+.nav-image-face {
+    margin-left: 10px;
+}
+
+.nav-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+
+
+.navigation {
+    display: grid;
+    grid-template-columns: 10% 75% 15%;
+    align-items: center;
+    padding: 10px; /* Додав padding для простору навколо вмісту */
+}
+
+.logo-image {
+    max-width: 100%; /* Додаємо це, щоб логотип не виходив за межі контейнера */
+}
+
+.head-button,
+.small-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Рівномірний розподіл простору між кнопками */
+}
+
+.small-search-button,
+.small-user-button,
+.small-basket-button {
+    max-width: 100%; /* Додаємо це, щоб зображення не виходило за межі контейнера */
+}
+
+
+.perfume-button,
+.aroma-diffuser-button,
+.car-button,
+.certificate-button {
+    margin-right: 90px;
+    padding: 20px 20px; /* Збільште висоту та ширину кнопок */
+    border: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px; /* Збільште розмір тексту в кнопках */
+}
+
+.nav-image-inst,
+.nav-image-face,
+.nav-image-tik {
+    width: 35px; /* Налаштуйте розмір за потребою */
+    height: 35px; /* Налаштуйте розмір за потребою */
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.small-button {
+    display: flex;
+    align-items: center; /* Вирівнюємо кнопки по вертикалі */
+}
+
+.nav-image-inst,
+.nav-image-face,
+.nav-image-tik,
+.small-search-button,
+.small-user-button,
+.small-basket-button {
+    width: 40px; /* Налаштуйте розмір за потребою */
+    height: 40px; /* Налаштуйте розмір за потребою */
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.small-search-button,
+.small-user-button,
+.small-basket-button {
+    border-radius: 50%;
+}
+
+/* Додаткові стилі для фото-кнопок, якщо потрібно */
+.small-search-button {
+    background-color: #000;
+}
+
+.small-user-button {
+    background-color: #000;
+}
+
+.small-basket-button {
+    background-color: #000;
+    /* Додайте інші стилі за необхідності */
+}
+
+.logo {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 80px; /* Задайте розмір за потребою */
+    height: 80px; /* Задайте розмір за потребою */
+}
+
+.logo-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Нові стилі для фото-кнопок */
+.nav-image-inst,
+.nav-image-tik,
+.nav-image-face {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* CSS index */
+.product-difuzor-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    background-image: url('photo/difuzor.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    max-width: 100%;
+   
+    
+}
+
+.photo-difuzor {
+    display: flex;
+    overflow: hidden;
+    margin-left: 20% ;
+    max-width: 70%;
+    max-width: 100%; /* Зображення не буде ширше свого контейнера */
+    max-height: 100%; /* Зображення не буде вище свого контейнера */
+    height: auto; /* Забезпечить пропорційне збільшення/зменшення висоти */
+    width: auto; /* Забезпечить пропорційне збільшення/зменшення ширини */
+    display: block; /* Виправлення проміжку, який може виникнути через inline-block */
+    margin: 0 auto; /* Центрувати зображення у контейнері */
+}
+
+.product-details {
+    text-align: center;
+    margin-left: center;
+    max-width: 500px; /* Змініть розмір за потребою */
+}
+
+.order-button {
+    padding: 15px 30px;
+    border: none;
+    background-color: #00ef28;
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px;
+    width: 100%;
+    max-width: 300px;
+}

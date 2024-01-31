@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIRUMIKA</title>
+    <link rel="stylesheet" href="index.css">
+      <!-- Підключення jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="news">
+            <div class="news-section">
+                <h class="news1 visible">Останні новини знижки 15%</h>
+                <h class="news2">Знижка 25%</h>
+                <h class="news3">Останні новини знижки 35%</h>
+                <h class="news3">Останні новини знижки 45%</h>
+                <h class="news3">Останні новини знижки 55%</h>
+                <h class="news3">Останні новини знижки 65%</h>
+                <!-- Тут додаєте вміст для новин -->
+            </div>
+            
+            <div class="buttons-section">
+                <a href="https://www.instagram.com/perfumsbar_odessa/" target="_blank">
+                    <img src="photo/logo-instagram.png" alt="Інстаграм" class="nav-image-inst">
+                </a>
+                <a href="https://www.tiktok.com/@perfumsbar_odessa/" target="_blank">
+                    <img src="photo/logo-tiktok.png" alt="Тік-Ток" class="nav-image-tik">
+                </a>
+                <a href="https://www.facebook.com/2261965680707018/posts/2743168335920081/" target="_blank">
+                    <img src="photo/logo-facebook.png" alt="Фейсбук" class="nav-image-face">
+                </a>
+            </div>
+            
+        </nav>
+
+        <nav class="navigation">
+            <div class="logo">
+                <img src="photo/logo-mirumika.png" alt="Logo" class="logo-image">
+            </div>
+            <div class="head-button">
+                <a href="mirumikaParfums.html">
+                    <button class="perfume-button">Парфуми</button>
+                </a>
+                <a href="mirumikaDifuzor.html">
+                    <button class="aroma-diffuser-button">Аромадифузор</button>
+                </a>
+                <a href="mirumikaCarsParfum.html">
+                    <button class="car-button">Авто</button>
+                </a>
+                <a href="mirumikaSertifikat.html">
+                    <button class="certificate-button">Сертифікат</button>
+                </a>
+            </div>
+            
+            <div class="small-button">
+                <img src="photo/logo-search.png" alt="Search" class="small-search-button">
+                <img src="photo/logo-user.png" alt="User" class="small-user-button">
+                <img src="photo/logo-basket.png" alt="Basket" class="small-basket-button">
+            </div>
+        </nav>
+    </header>
+
+    <section class="product-difuzor-section">
+        <div class="photo-difuzor">
+            
+        </div>
+        <div class="product-details">
+            <h2>Заголовок, буде написано </h2>
+            <button class="order-button">Замовити</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script>
+        // Функція для завантаження контенту із файлу
+        function loadContent(file, targetSelector) {
+          $.ajax({
+            url: file,
+            dataType: 'html',
+            success: function(data) {
+              $(targetSelector).html(data);
+            },
+            error: function(xhr, status, error) {
+              console.error('Failed to load content from ' + file + ': ' + status + ', ' + error);
+            }
+          });
+        }
+    
+        // Виклик функції для кожного з файлів
+        loadContent('header-content.html', '.header');
+    
+        // Додайте інші виклики для інших файлів, якщо потрібно
+      </script>
+</body>
+
+</html>
