@@ -19,14 +19,14 @@
     
 
     <section class="product-difuzor-section">
-        <div class="photo-difuzor">
-            
-        </div>
-        <div class="product-details">
-            <h2>Заголовок, буде написано </h2>
-            <button class="order-button">Замовити</button>
-        </div>
-    </section>
+      <div class="photo-difuzor">
+          
+      </div>
+      <div class="product-details">
+          <h2>Заголовок, буде написано </h2>
+          <button class="order-button">Замовити</button>
+      </div>
+  </section>
 
     <script>
         // Функція для завантаження контенту із файлу
@@ -37,9 +37,7 @@
             success: function(data) {
               $(targetSelector).html(data);
             },
-            error: function(xhr, status, error) {
-              console.error('Failed to load content from ' + file + ': ' + status + ', ' + error);
-            }
+            
           });
         }
     
@@ -47,7 +45,7 @@
         loadContent('header-content.html', '.header');
     
         // Додайте інші виклики для інших файлів, якщо потрібно
-        
+
       </script>
 </body>
 </html>

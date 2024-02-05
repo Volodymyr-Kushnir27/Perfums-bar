@@ -10,10 +10,10 @@
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
-    <div id="header-container"></div>
+    <div id="header"></div>
     <script>
         $(function() {
-            $("#header-container").load("header.html");
+            $("#header").load("header.html");
         });
     </script>
     
@@ -44,7 +44,7 @@
         }
     
         // Виклик функції для кожного з файлів
-        loadContent('header-content.html', '.header');
+        loadContent('header.html', '.header');
     
         // Додайте інші виклики для інших файлів, якщо потрібно
       </script>
