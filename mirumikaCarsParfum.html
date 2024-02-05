@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIRUMIKA/CarsParfums</title>
+    <link rel="stylesheet" href="index.css">
+      <!-- Підключення jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
+    <div id="header-container"></div>
+    <script>
+        $(function() {
+            $("#header-container").load("header.html");
+        });
+    </script>
     
+
+    <section class="product-difuzor-section">
+        <div class="photo-difuzor">
+            
+        </div>
+        <div class="product-details">
+            <h2>Заголовок, буде написано </h2>
+            <button class="order-button">Замовити</button>
+        </div>
+    </section>
+
+    <script>
+        // Функція для завантаження контенту із файлу
+        function loadContent(file, targetSelector) {
+          $.ajax({
+            url: file,
+            dataType: 'html',
+            success: function(data) {
+              $(targetSelector).html(data);
+            },
+            error: function(xhr, status, error) {
+              console.error('Failed to load content from ' + file + ': ' + status + ', ' + error);
+            }
+          });
+        }
+    
+        // Виклик функції для кожного з файлів
+        loadContent('header-content.html', '.header');
+    
+        // Додайте інші виклики для інших файлів, якщо потрібно
+      </script>
 </body>
 </html>
