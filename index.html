@@ -12,7 +12,7 @@
 
 <body>
 
-    <header class="header">
+    <!-- <header class="header">
         <nav class="news">
             <div class="news-section">
                 <h class="news1 visible">Останні новини знижки 15%</h>
@@ -20,9 +20,9 @@
                 <h class="news3">Останні новини знижки 35%</h>
                 <h class="news3">Останні новини знижки 45%</h>
                 <h class="news3">Останні новини знижки 55%</h>
-                <h class="news3">Останні новини знижки 65%</h>
+                <h class="news3">Останні новини знижки 65%</h> -->
                 <!-- Тут додаєте вміст для новин -->
-            </div>
+            <!-- </div>
             
             <div class="buttons-section">
                 <a href="https://www.instagram.com/perfumsbar_odessa/" target="_blank">
@@ -63,7 +63,14 @@
                 <img src="photo/logo-basket.png" alt="Basket" class="small-basket-button">
             </div>
         </nav>
-    </header>
+    </header> -->
+
+    <div id="header-container"></div>
+    <script>
+        $(function() {
+            $("#header-container").load("header.html");
+        });
+    </script>
 
     <section class="product-difuzor-section">
         <div class="photo-difuzor">
